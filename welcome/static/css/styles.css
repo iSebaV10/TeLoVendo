@@ -7,3 +7,26 @@ table {
 h2 {
     color: #007bff;
 }
+
+/* static/styles.css */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.logo-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    padding-top: 20px;
+}
