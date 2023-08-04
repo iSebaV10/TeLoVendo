@@ -25,7 +25,16 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="{% url 'create_user' %}">Crear usuario</a>
                 </li>
-                <!-- Agrega aquí más elementos del menú si lo deseas -->
+
+            {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}">Cerrar Sesión</a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}">Iniciar Sesión</a>
+                </li>
+            {% endif %}
             </ul>
         </div>
     </nav>
